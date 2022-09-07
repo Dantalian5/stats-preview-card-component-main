@@ -120,60 +120,61 @@ body{
         }
     }
 }
-@media only screen and (max-width: 470px) {
-    .main-container{
-        width: 300px;
-        height: 782px;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        .img-container{
-            width: 100%;
-            height: 40%;            
-            border-radius: 8px 8px 0px 0px; 
-            overflow: hidden;
-            position: relative;
-            }
-            .info-container{
-                height: 60%;
+@media only screen and (max-width: 800px) {
+    body{
+        .main-container{
+            max-width: 400px;
+            min-width: 300px;
+            height: 780px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+            padding: 10px;
+            .img-container{
                 width: 100%;
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-evenly;
+                height: 30%;            
+                border-radius: 8px 8px 0px 0px;
+            }
+            .info-container{                
+                width: 100%;
+                height: 70%;
+                align-items: center;
+                justify-content: flex-start;
                 flex-direction: column;
-                padding: 0;
+                padding: 0 5%;
                 overflow: hidden;
                 .info-items{
                     width: 100%;
-                    height: 60%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: space-evenly;
-    
-                    h1{
-                        font: $font-h;
-                        color: $txt-h;
-                        span{
-                            color: $txt-accent;
-                        }
-                    }            
-                    p{
-                        font: $font-p;
-                        color: $txt-p;
-                        padding: 0 10px 0 0;
-                        line-height: 25px;
-                    }
-                }
-                .stats-container{
-                    width: 100%;
+                    height: 65%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    justify-content: space-between;
-                    
+                    justify-content: space-evenly;
+    
+                    h1{
+                        font-size: 28px;
+                        text-align: center;
+                    }            
+                    p{
+                        text-align: center;
+                    }
+                }
+                .stats-container{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-end;
+                    .stats-items{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin: 15px;
+                    }
                 }
             }
+        }
     }
     
 }    
