@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+/*Colors*/
+    /*background*/
+    $bkg-main: hsl(233, 47%, 7%, 1);
+    $bkg-card: hsl(244, 38%, 16%, 1);
+    /*text*/
+    $txt-h: hsl(0, 0%, 100%, 1);
+    $txt-p: hsla(0, 0%, 100%, 0.75);
+    $txt-sh: hsla(0, 0%, 100%, 0.6);
+    $txt-accent: hsl(277, 64%, 61%);
+/*Font-Family*/
+    $font-h: 700 36px 'Inter', sans-serif;
+    $font-p: 400 15px 'Inter', sans-serif;
+    $font-sh: 700 24px 'Inter', sans-serif;
+    $font-sp: 400 13px 'Lexend Deca', sans-serif;
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: none;
+}
+body{
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: $bkg-main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .main-container{
+        max-width: 1110px;
+        height: 445px;
+        background-color: $bkg-card;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+        .img-container{
+            width: 48%;
+            height: 100%;            
+            border-radius: 0px 8px 8px 0px; 
+            overflow: hidden;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .img-container::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;            
+            background-color: rgba(90, 2, 143, 0.49);
+        }
+        .info-container{
+            height: 100%;
+            width: 52%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            flex-direction: column;
+            padding: 10px 8%;
+            overflow: hidden;
+            .info-items{
+                width: 100%;
+                height: 60%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-evenly;
+
+                h1{
+                    font: $font-h;
+                    color: $txt-h;
+                    span{
+                        color: $txt-accent;
+                    }
+                }            
+                p{
+                    font: $font-p;
+                    color: $txt-p;
+                    padding: 0 10px 0 0;
+                    line-height: 25px;
+                }
+            }
+            .stats-container{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .stats-items{
+                    h2{
+                        font: $font-sh;
+                        color: $txt-h;
+                    }
+                    p{
+                        font: $font-sp;
+                        color: $txt-sh;
+                    }
+                }
+            }
+        }
+    }
+
+    .attribution { 
+        font-size: 11px; 
+        text-align: center;
+        color: white; 
+        position: absolute;
+        bottom: 0;
+        a { 
+            color: hsl(228, 45%, 44%); 
+        }
+    }
+}
+@media only screen and (max-width: 470px) {
+    .main-container{
+        width: 300px;
+        height: 782px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        .img-container{
+            width: 100%;
+            height: 40%;            
+            border-radius: 8px 8px 0px 0px; 
+            overflow: hidden;
+            position: relative;
+            }
+            .info-container{
+                height: 60%;
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-evenly;
+                flex-direction: column;
+                padding: 0;
+                overflow: hidden;
+                .info-items{
+                    width: 100%;
+                    height: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-evenly;
+    
+                    h1{
+                        font: $font-h;
+                        color: $txt-h;
+                        span{
+                            color: $txt-accent;
+                        }
+                    }            
+                    p{
+                        font: $font-p;
+                        color: $txt-p;
+                        padding: 0 10px 0 0;
+                        line-height: 25px;
+                    }
+                }
+                .stats-container{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    
+                }
+            }
+    }
+    
+}    
+     

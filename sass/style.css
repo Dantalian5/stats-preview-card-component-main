@@ -1,1 +1,162 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+/*Colors*/
+/*background*/
+/*text*/
+/*Font-Family*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: none;
+}
+
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: hsl(233deg, 47%, 7%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .main-container {
+  max-width: 1110px;
+  height: 445px;
+  background-color: hsl(244deg, 38%, 16%);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+body .main-container .img-container {
+  width: 48%;
+  height: 100%;
+  border-radius: 0px 8px 8px 0px;
+  overflow: hidden;
+  position: relative;
+}
+body .main-container .img-container img {
+  width: 100%;
+  height: 100%;
+}
+body .main-container .img-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(90, 2, 143, 0.49);
+}
+body .main-container .info-container {
+  height: 100%;
+  width: 52%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 10px 8%;
+  overflow: hidden;
+}
+body .main-container .info-container .info-items {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+body .main-container .info-container .info-items h1 {
+  font: 700 36px "Inter", sans-serif;
+  color: hsl(0deg, 0%, 100%);
+}
+body .main-container .info-container .info-items h1 span {
+  color: hsl(277deg, 64%, 61%);
+}
+body .main-container .info-container .info-items p {
+  font: 400 15px "Inter", sans-serif;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  padding: 0 10px 0 0;
+  line-height: 25px;
+}
+body .main-container .info-container .stats-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .main-container .info-container .stats-container .stats-items h2 {
+  font: 700 24px "Inter", sans-serif;
+  color: hsl(0deg, 0%, 100%);
+}
+body .main-container .info-container .stats-container .stats-items p {
+  font: 400 13px "Lexend Deca", sans-serif;
+  color: hsla(0deg, 0%, 100%, 0.6);
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+body .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media only screen and (max-width: 470px) {
+  .main-container {
+    width: 300px;
+    height: 782px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-container .img-container {
+    width: 100%;
+    height: 40%;
+    border-radius: 8px 8px 0px 0px;
+    overflow: hidden;
+    position: relative;
+  }
+  .main-container .info-container {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+  }
+  .main-container .info-container .info-items {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  .main-container .info-container .info-items h1 {
+    font: 700 36px "Inter", sans-serif;
+    color: hsl(0deg, 0%, 100%);
+  }
+  .main-container .info-container .info-items h1 span {
+    color: hsl(277deg, 64%, 61%);
+  }
+  .main-container .info-container .info-items p {
+    font: 400 15px "Inter", sans-serif;
+    color: hsla(0deg, 0%, 100%, 0.75);
+    padding: 0 10px 0 0;
+    line-height: 25px;
+  }
+  .main-container .info-container .stats-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=style.css.map */
