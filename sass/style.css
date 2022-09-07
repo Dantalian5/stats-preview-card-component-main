@@ -121,6 +121,9 @@ body .attribution a {
     height: 30%;
     border-radius: 8px 8px 0px 0px;
   }
+  body .main-container .img-container img {
+    height: auto;
+  }
   body .main-container .info-container {
     width: 100%;
     height: 70%;
