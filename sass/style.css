@@ -47,7 +47,7 @@ body .main-container .img-container img {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
 }
 body .main-container .info-container {
