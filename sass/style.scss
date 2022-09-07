@@ -41,7 +41,7 @@ body{
         margin: 20px;        
         isolation: isolate;
         .img-container{
-            width: 48%;
+            max-width: 48%;
             height: 100%;            
             border-radius: 0px 8px 8px 0px; 
             overflow: hidden;
@@ -58,15 +58,6 @@ body{
                 height: 100%;
             }
         }
-        /*.img-container::after{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;            
-            background-color: rgba(90, 2, 143, 0.49);
-        }*/
         .info-container{
             height: 100%;
             width: 52%;
@@ -138,9 +129,8 @@ body{
             align-items: center;
             justify-content: center;
             margin: 20px;
-            padding: 10px;
             .img-container{
-                width: 100%;
+                max-width: 100%;
                 height: 30%;            
                 border-radius: 8px 8px 0px 0px;
             }
